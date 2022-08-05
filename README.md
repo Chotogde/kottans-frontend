@@ -149,9 +149,19 @@ ___
     
 ## 1. Introduction to Git and GitHub   
 1. _What's was new to me:_
+   
+     VCS, GIT, branches
 1. _Thing that amazed me:_
-1. _Thing that i going to use in the future:_
-    
+   
+     Track file state (**modified**, **staged** or **committed**);
+  - File tracked by Git, will first be modified when we change it in any way. 
+  - Then it becomes staged when we mark those changes for tracking.
+  - And finally it will get committed when we store those changes in the VCS;
+   Merging.
+3. _Thing that i going to use in the future:_
+   
+   `git init`, `git clone`, `git add`, `git commit -a -m`, `git checkout -b new branch`, `git merge`. 
+   
   <details>
  <summary><h4> Screenshots </h4></summary>
     
@@ -163,7 +173,59 @@ ___
   <details>
  <summary><h4> Notes </h4></summary>
       
+   _Tracked_ files are part of the snapshots, while _untracked_ files aren't a part of snapshots yet.
+Each track file can be in one of three main states: ___modified___, ___staged___ or ___committed___.
 
+`~$ git init`       [create a new git repository]
+     
+`~$ git clone`      [clone existing git repository]
+```     
+~$ git add        [add file to staging area]
+         flags to git add:
+               -p [to review changes before adding them]
+```   
+`~$ git status`   [info about current working tree and pending changes]
+```     
+~$ git commit   [to get commited]  
+         flags to git commit: 
+            -m ‘add comment’
+     -a [shortcut to stage any changes to tracked files and commit them in one step]
+```
+`~$ git config -l` 
+```     
+~$ git log [check the history of the commits]
+    flags to git log:
+     -p     [ using this flag gives us the patch that was created]
+    --stat  [which files were changed and how many lines were added or removed]
+      -2    [any number, limits output to this parameters]
+```
+`~$ git rm` [remove files from your repository]
+     
+`~$ git mv` [rename files in your repository]
+
+`~$ git checkout` [reverts changes to modified files before they are staged]
+     
+`~$ git reset`    [reverts changes(unstage) to staged files ]
+
+`~$ git commit --amend` [ to overwrite the previous commit]
+     
+`~$ git revert`         [ it creates a commit that contains the inverse of all the changes made in the bad commit in order to cancel them out ]
+
+`~$ git checkout <branch>`      [Switches to a branch]
+     
+`~$ git checkout -b new branch` [to create a new branch and to switch to it]
+
+__Merging__ is the term that Git uses for combining branch data and history together.
+
+`~$ git merge` [take the independent snapshots and history of one Git branch, and tangle them into another]
+     
+`~$ git merge --abort` [this will stop the merge and reset the files in your working tree back to the previous commit before the merge ever happened]
+
+`~$ git log --graph --oneline` [--graph for seeing the commits as a graph, and --oneline to only see one line per commit]
+
+`.gitignore` [file that contains list of file that need to be ignored in repo] 
+
+     
   <details>
  <summary><h4> more </h4></summary>
   
@@ -246,6 +308,7 @@ The default branch that Git creates for you when a new repository initialized is
 ~$ git branch [ list, create, delete, and manipulate branches. Running git branch by itself will show you a list of all the branches in your repository ]
     flags to git branch:
           -d [delete branch]
+~$ git checkout <branch> [Switches to a branch]
 
 ~$ git checkout -b new branch [to create a new branch and to switch to it]
   
@@ -261,9 +324,39 @@ Merging is the term that Git uses for combining branch data and history together
     
   </details>
   
- </details>
+ 
   
 <!-------------------------------          --------------------------------->
+   
+## 2. learngitbranching.js.org   
+1. _What's was new to me:_
+1. _Thing that amazed me:_
+1. _Thing that i going to use in the future:_
+    
+  <details>
+ <summary><h4> Screenshots </h4></summary>
+
+ ![LearnGitBranching_Main](readme_img/General/0.2._LearnGitBranching_Main.jpg)
+ ![LearnGitBranching_Remote](readme_img/General/0.2._LearnGitBranching_Remote.jpg)
+
+  </details>
+      
+  <details>
+ <summary><h4> Notes </h4></summary>
+      
+  <details>
+ <summary><h4> more </h4></summary>
+ 
+```
+
+```
+
+  </details>
+    
+  </details>
+</details>     
+<!-------------------------------          --------------------------------->
+     
   <details>
 <summary><h3> 1. Linux CLI and Networking </h4></summary>
    </details>
