@@ -102,9 +102,9 @@ ___
 1. _Thing that amazed me:_
 1. _Thing that i going to use in the future:_
  
-  #### I'll add screenshots with progress.
+  #### I'll add screenshots with progress.:camera_flash:
  
-  #### I'll add an unformatted summary (just some notes for myself).
+  #### I'll add an unformatted summary (just some notes for myself).:memo:
  
   ___
  
@@ -167,7 +167,7 @@ ___
    `git init`, `git clone`, `git add`, `git commit -a -m`, `git checkout -b new branch`, `git merge`. 
    
   <details>
- <summary><h4> Screenshots </h4></summary>
+ <summary><h4> :camera_flash:Screenshots </h4></summary>
     
   ![coursera1](readme_img/General/0.1._coursera1.jpg)
   ![coursera2](readme_img/General/0.1._coursera2.jpg)
@@ -175,7 +175,7 @@ ___
   </details>
       
   <details>
- <summary><h4> Notes </h4></summary>
+ <summary><h4> :memo:Notes </h4></summary>
       
    _Tracked_ files are part of the snapshots, while _untracked_ files aren't a part of snapshots yet.
 Each track file can be in one of three main states: ___modified___, ___staged___ or ___committed___.
@@ -348,7 +348,7 @@ Merging is the term that Git uses for combining branch data and history together
 `git switch` , `git rebase` , `git fetch` , `git pull` , `git push`
     
   <details>
- <summary><h4> Screenshots </h4></summary>
+ <summary><h4> :camera_flash:Screenshots </h4></summary>
 
  ![LearnGitBranching_Main](readme_img/General/0.2._LearnGitBranching_Main.jpg)
  ![LearnGitBranching_Remote](readme_img/General/0.2._LearnGitBranching_Remote.jpg)
@@ -356,7 +356,7 @@ Merging is the term that Git uses for combining branch data and history together
   </details>
       
   <details>
- <summary><h4> Notes </h4></summary>
+ <summary><h4> :memo:Notes </h4></summary>
      
 `~$ git rebase` [Rebasing essentially takes a set of commits, "copies" them, and plops them down somewhere else.]
      
@@ -385,10 +385,39 @@ Merging is the term that Git uses for combining branch data and history together
 <summary><h3> PR mock-repo </h3></summary>
 
  ## 6. PR Kottans/mock-repo
-
+     
+1. Fork Kottans/mock-repo
+2. `git clone https://github.com/Chotogde/mock-repo.git`
+     
+	2.1 `cd mock-repo`
+3. `git remote add upstream https://github.com/kottans/mock-repo.git`
+4. `git checkout master`
+     
+	4.1 `git checkout -b second`
+5. `code .`
+     
+	5.1 opens in VScode , add some greeting info
+     
+	5.2 save without formating `ctrl+shift+P` in VScode
+     
+	5.3. check status of branch `git status`
+     
+6. Add commit `git commit-a -m ‘Add greetings to readme’`
+7. Switch branch to master
+	`git switch master` or `git checkout master`
+8. `git pull upstream master`
+9. `git checkout second && git merge master`
+10. `git push --set-upstream origin second`
+11. pull-request from my repo to kottans/mock-repo with GitHub web-interface
  
+  <details>
+<summary><h4> :camera_flash:Screenshots for PR </h4></summary>
+     
+  ![Git mock-repo](readme_img/General/0.6.PR_mock-repo.jpg)
+     
    </details>
-
+</details>
+     
 ***
      
 <!-------------------------------          --------------------------------->
