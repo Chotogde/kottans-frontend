@@ -145,8 +145,12 @@ ___
 <!-------------------------------Git Basics--------------------------------->
   
 <details>
-<summary><h3> 0. Git Basics </h4></summary>
+<summary><h3> 0. Git Basics </h3></summary>
     
+  :link:[Tasks](https://github.com/kottans/frontend/blob/2022_UA/tasks/git-intro.md)
+   
+   Useful links: :link:[Лекція по Git від Олексія Руденка]() | :link:[Git за 30 хвилин](https://codeguida.com/post/453) | :link:[Submit A Pull Request](https://learntocodetogether.com/create-your-first-pull-request/)
+   
 ## 1. Introduction to Git and GitHub   
 1. _What's was new to me:_
    
@@ -372,7 +376,25 @@ Merging is the term that Git uses for combining branch data and history together
   </details>
     
   </details>
-</details>     
+    
+<!-------------------------------  PR Kottans/mock-repo        --------------------------------->
+     
+***
+     
+  <details>
+<summary><h3> PR mock-repo </h3></summary>
+
+ ## 6. PR Kottans/mock-repo
+
+ 
+   </details>
+
+***
+     
+<!-------------------------------          --------------------------------->
+     
+     
+  </details>
 <!-------------------------------          --------------------------------->
      
   <details>
