@@ -326,12 +326,22 @@ Merging is the term that Git uses for combining branch data and history together
   
  
   
-<!-------------------------------          --------------------------------->
+<!------------------------------- learngitbranching.js.org  --------------------------------->
    
 ## 2. learngitbranching.js.org   
 1. _What's was new to me:_
+                              
+ `git switch` - more logical for me than `git checkout` (verbally closer)
+                              
+ `git fetch` , `git pull` , `git push` 
+                              
 1. _Thing that amazed me:_
+                              
+ `git pull` = `git fetch` + `git merge`
+                              
 1. _Thing that i going to use in the future:_
+                              
+`git switch` , `git rebase` , `git fetch` , `git pull` , `git push`
     
   <details>
  <summary><h4> Screenshots </h4></summary>
@@ -343,14 +353,22 @@ Merging is the term that Git uses for combining branch data and history together
       
   <details>
  <summary><h4> Notes </h4></summary>
-      
+     
+`~$ git rebase` [Rebasing essentially takes a set of commits, "copies" them, and plops them down somewhere else.]
+     
+   to **fetch** data from a remote repository - the command for this is conveniently named `git fetch`
+     
+   `git pull` is essentially shorthand for a *git fetch* followed by a *merge* of whatever branch was just fetched.
+     
+   `git push` is responsible for uploading your changes to a specified remote and updating that remote to incorporate your new commits. Once git push completes, all your friends can then download your work from the remote
+     
+   `git pull --rebase` is shorthand for a fetch and a rebase
+     
   <details>
  <summary><h4> more </h4></summary>
  
-```
-
-```
-
+![LearnGitBranching_more](readme_img/General/0.2._LearnGitBranching_more.jpg)
+     
   </details>
     
   </details>
