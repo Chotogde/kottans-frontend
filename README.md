@@ -424,11 +424,171 @@ Merging is the term that Git uses for combining branch data and history together
      
      
   </details>
-<!-------------------------------          --------------------------------->
+<!-------------------------------   Linux CLI and Networking       --------------------------------->
      
   <details>
 <summary><h3> 1. Linux CLI and Networking </h4></summary>
-   </details>
+   
+ :link:![Tasks](https://github.com/kottans/frontend/blob/2022_UA/tasks/linux-cli-http.md)
+ 
+ ## 1. Linux Survival (4 modules)   
+1. _What's was new to me:_
+
+   `'?'` It matches exactly one character ; `lpq` ; `kill -9`
+
+1. _Thing that amazed me:_
+
+   If don't give any argument to the `cd` command, then it will go to your home directory by default.
+
+1. _Thing that i going to use in the future:_
+
+   all the commands are useful, in the future I will use all of them.
+    
+  <details>
+ <summary><h4> :camera_flash:Screenshots </h4></summary>
+
+ ![Linuxsurvival_q1](task_linux_cli/0.1._Linuxsurvival_q1.jpg)
+ ![Linuxsurvival_q2](task_linux_cli/0.1._Linuxsurvival_q2.jpg)
+ ![Linuxsurvival_q3](task_linux_cli/0.1._Linuxsurvival_q3.jpg)
+ ![Linuxsurvival_q4](task_linux_cli/0.1._Linuxsurvival_q4.jpg)
+
+  </details>
+      
+  <details>
+ <summary><h4> :memo:Notes </h4></summary>
+      
+  `ls` [list the contents of a directory]
+  
+`mkdir` [make directory]
+
+`mv` [move a file] / rename file (e.x. mv wolves coyotes)
+
+`cd` [change directory]
+
+`cd ..` [To change to your previous directory (also known as the "parent" directory)
+
+ "..", it refers to the directory above your current directory.]
+ 
+`pwd` [print working directory]
+______________
+
+`cp` [copy]
+
+`rm` [remove]
+
+`rmdir` [remove directory]
+
+`ls -l` [long listing]
+
+`chmod` [change mode]
+e.x.     "rwx" sets "user", "group", and "other"
+chmod o+x gorillas
+chmod ugo-rwx gorillas
+
+`'*'` It matches any number of characters
+
+`'?'` It matches exactly one character.
+
+`groups` [To get a listing of your group memberships]
+
+______________
+
+`~` [ home directory] e.x. "/home/keeper". cp ~/jokes /tmp  cp /home/keeper/jokes /tmp
+
+`cd ~ (User ID)` e.x. cd ~bookie
+
+`man` ["manual"]
+
+`finger`  - user information lookup program 
+
+`cat` [can combine files for output] \ more 
+
+> if you do not give any argument to the "cd" command, then it will go to your home directory by default. 
+
+`lpr` [line printer] send to printer
+ e.x. lpr -P hp14 thoughts ['-P' stands for "printer"]
+ 
+`lpq` display print queue
+
+`lprm` remove from print queue
+
+`find` [locate files]
+
+`.` [current directory]
+
+______________
+
+> The regular "cp" command will not let you copy directories, but if you use the "-r" option, it will.
+> > e.x.  cp -r ~jester/jokes ~
+
+`df` [disk free]
+
+`rm -r` [allows you to remove an entire directory tree]
+
+`ps` [process status]
+
+`ps aux` [detailed list of all processes]
+
+`"|"`[pipe] it "pipes" data from one command to another
+
+`grep` [You can use "grep" to find patterns in data]
+
+`kill PID` [To kill a process, where PID is the ID of the process you want to kill]
+
+`kill -9` [kill immediately]
+
+    
+  </details>
+  
+  ## 2-3. HTTP
+
+:link:[HTTP: The Protocol Every Web Developer Must Know—Part 1](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177?ec_unit=translation-info-language)
+
+:link:[HTTP: The Protocol Every Web Developer Must Know—Part 2](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-2--net-31155?ec_unit=translation-info-language)
+
+<details>
+ <summary><h4> :memo:Notes </h4></summary>
+ 
+ **Basics of HTTP request and response**
+ **HTTP Request Verbs**
+
+_There are four universally applicable HTTP verbs in a request:_
+
+- `GET`: fetch a resource from the server. For a GET request, the URL should carry all the required pieces of information for the server to spot the right resource. It does not have a message body.
+- `POST`: create a new resource. The request has an optional payload which helps the server create a new resource.
+- `PUT`: update an existing resource. The request should have an optional payload to help the server update an existing resource.
+- `DELETE`: delete an existing resource.
+
+_There are some less-used verbs too. A few to consider are:_
+
+- `HEAD` is similar to GET, but without the message body. It's used to retrieve the server headers for a particular resource, generally to check if the resource has changed, via timestamps.
+- `TRACE` is used to retrieve the hops that a request takes during a round trip from the server. Each intermediate proxy or gateway would inject its IP or DNS name into the Via header field. This can be used for diagnostic purposes.
+- `OPTIONS` is used to retrieve server capabilities. On the client side, it can be used to modify the request based on what the server supports.
+
+_There are two types of caches:_
+
+   ***Public Cache***: stores the server response for multiple users. This calls for customized infrastructure to allow a user to access the popular resource several times.
+   
+   ***Private Cache***: limited to a single user. The resource would be stored in the user's browser. As the user navigates, the resource will be loaded without multiple trips to the server. Caching makes content available, even when the user is offline. Commonly cached data includes usernames, passwords, URLs, browsing history, and web content.
+
+**Cache Processing**
+
+Regardless of where a cache is located, the process of maintaining a cache is quite similar:
+
+* Receive request message.
+* Parse the URL and headers.
+* Look up a local copy; otherwise, fetch and store locally
+* Do a freshness check to determine the age of the content in the cache; make a request to refresh the content only if necessary.
+* Create the response from the cached body and updated headers.
+* Send the response back to the client.
+* Optionally, log the transaction.
+
+
+</details>
+
+<!-------------------------------   VCS (hello gitty), GitHub and Collaboration       --------------------------------->
+
+ </details>
  
   <details>
 <summary><h3> 2. VCS (hello gitty), GitHub and Collaboration </h4></summary>
