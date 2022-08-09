@@ -110,11 +110,11 @@ ___
  
 ### #My progress
 <details>
-    <summary><h5>:white_check_mark:General</h5></summary>
+    <summary><h5>General:white_check_mark:</h5></summary>
     
 - [x] 0. Git Basics
-- [ ] 1. Linux CLI and Networking
-- [ ] 2. VCS (hello gitty), GitHub and Collaboration
+- [x] 1. Linux CLI and Networking
+- [x] 2. VCS (hello gitty), GitHub and Collaboration
 </details>
  
 <details>
@@ -141,7 +141,7 @@ ___
 <!-------------------------------General------------------------------------>
 
 <details>
-<summary><h2> General </h2></summary>
+<summary><h2> General:heavy_check_mark: </h2></summary>
 <!-------------------------------Git Basics--------------------------------->
   
 <details>
@@ -149,7 +149,7 @@ ___
     
   :link:[Tasks](https://github.com/kottans/frontend/blob/2022_UA/tasks/git-intro.md)
    
-   Useful links: :link:[Лекція по Git від Олексія Руденка]() | :link:[Git за 30 хвилин](https://codeguida.com/post/453) | :link:[Submit A Pull Request](https://learntocodetogether.com/create-your-first-pull-request/)
+   Useful links: :link:[Лекція по Git від Олексія Руденка](https://www.youtube.com/playlist?list=PLS8sEUxbfFY9MnPIFPTNlaS5xX7P5Ge-5) | :link:[Git за 30 хвилин](https://codeguida.com/post/453) | :link:[Submit A Pull Request](https://learntocodetogether.com/create-your-first-pull-request/)
    
 ## 1. Introduction to Git and GitHub   
 1. _What's was new to me:_
@@ -420,9 +420,6 @@ Merging is the term that Git uses for combining branch data and history together
      
 ***
      
-<!-------------------------------          --------------------------------->
-     
-     
   </details>
 <!-------------------------------   Linux CLI and Networking       --------------------------------->
      
@@ -592,6 +589,63 @@ Regardless of where a cache is located, the process of maintaining a cache is qu
  
   <details>
 <summary><h3> 2. VCS (hello gitty), GitHub and Collaboration </h4></summary>
+  
+  :link:[Tasks](https://github.com/kottans/frontend/blob/2022_UA/tasks/git-collaboration.md)
+   
+   Useful cheatsheets: :link:[One](https://github.com/Chotogde/kottans-frontend/blob/f03c0ccc35342aa43dc13191f32633eff5055ce1/readme_img/General/gitcheatsheet_1.png) | :link:[Two](https://github.com/Chotogde/kottans-frontend/blob/f03c0ccc35342aa43dc13191f32633eff5055ce1/readme_img/General/gitcheatsheet_2.png) | :link:[Three](https://github.com/Chotogde/kottans-frontend/blob/f03c0ccc35342aa43dc13191f32633eff5055ce1/readme_img/General/gitcheatsheet_github.pdf) | :link:[Four](https://github.com/Chotogde/kottans-frontend/blob/f03c0ccc35342aa43dc13191f32633eff5055ce1/readme_img/General/gitcheatsheet_gitlab.pdf) 
+   
+   Useful links: :link:[Git and GitHub by Brian Yu (CS50 course 2019)](https://www.youtube.com/watch?v=eulnSXkhE7I) | :link:[oh s**t git](https://ohshitgit.com/) | :link:[Flight rules for Git](https://github.com/k88hudson/git-flight-rules)
+   
+## 1. GitHub & Collaboration  
+
+1. _What's was new to me:_
+
+1. _Thing that amazed me:_
+
+1. _Thing that i going to use in the future:_
+    
+  <details>
+ <summary><h4> :camera_flash:Screenshots </h4></summary>
+
+ ![]()
+ ![]()
+  </details>
+      
+  <details>
+ <summary><h4>:memo:Notes </h4></summary>
+      
+  <details>
+ <summary><h4> more </h4></summary>
+
+  </details>
+    
+  </details>
+
+
+## 2. learngitbranching.js.org 
+
+1. _What's was new to me:_
+
+1. _Thing that amazed me:_
+
+1. _Thing that i going to use in the future:_
+    
+  <details>
+ <summary><h4> :camera_flash:Screenshots </h4></summary>
+
+ ![]()
+ ![]()
+  </details>
+      
+  <details>
+ <summary><h4>:memo:Notes </h4></summary>
+      
+  <details>
+ <summary><h4> more </h4></summary>
+
+  </details>
+    
+  </details>
    </details>
  
 </details>
