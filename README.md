@@ -600,22 +600,67 @@ Regardless of where a cache is located, the process of maintaining a cache is qu
 
 1. _What's was new to me:_
 
+   `git branch -d BranchName` To remove the local branch.
+  
+   `git push --delete origin BranchName` To remove the remote branch
+  
 1. _Thing that amazed me:_
 
+   `git push -f` to force git to push the current snapshot into the repo as is
+   (we want to replace the old commits with the new one)
+  
 1. _Thing that i going to use in the future:_
+
+     `git push -u origin BranchName` , and git command to remove local\remote branch
     
   <details>
  <summary><h4> :camera_flash:Screenshots </h4></summary>
 
- ![]()
- ![]()
+ ![Coursera3](task_git_collaboration/2._coursera3.jpg)
+ ![Coursera4](task_git_collaboration/2._coursera4.jpg)
+ 
   </details>
       
   <details>
  <summary><h4>:memo:Notes </h4></summary>
       
+`git config --global credential.helper cache`
+
+`git remote -v` [look origin repo url]
+
+`git push -u origin BranchName`
+
+`git push --delete origin BranchName` [To remove the remote branch]
+
+`git branch -d BranchName` [To remove the local branch]
+
+`git push -f` to force git to push the current snapshot into the repo as is
+   (we want to replace the old commits with the new one) 
+
+  ***Best Practices for Collaboration***
+  
+  - always synchronize your branches before starting any work on your own
+  - avoid having very large changes that modify a lot of different things
+  - when working on a big change, it makes sense to have a separate feature branch
+  - regularly merge changes made on the master branch back onto the feature branch
+  - have the latest version of the project in the master branch and a stable version of the project on a separate branch
+  - you shouldn't rebase changes that have been pushed to remote repos
+  - having good commit messages is important
+
+      
   <details>
  <summary><h4> more </h4></summary>
+
+**Forking** is a way of creating a copy of the given repository so that it belongs to our user.
+A **pull request** is a _commit_ or series of _commits_ that you send to the owner of the repository so that they incorporate it into their tree.
+
+We can write automated tests to test the code for us and then use a continuous integration or CI system to run those tests automatically.
+A continuous integration system will build and test our code every time there's a change.
+This means that it will run whenever there's a new commit in the main branch of our code.
+
+Once we have our code automatically built and tested, the next automation step is continuous deployment which is sometimes called continuous delivery or CD. Continuous deployment means the new code is deployed often.
+The goal is to avoid roll outs with a lot of changes between two versions of a project and instead do incremental updates with only a few changes at a time.
+This allows errors to be caught and fixed early.
 
   </details>
     
@@ -626,27 +671,101 @@ Regardless of where a cache is located, the process of maintaining a cache is qu
 
 1. _What's was new to me:_
 
+   `git cherry-pick <Commit1> <Commit2> <...>`
+   [to copy a series of commits below your current location (HEAD)]
+
+  
+
 1. _Thing that amazed me:_
 
+   _You can technically specify "nothing" as a valid source for both git push and git fetch. The way you specify nothing is via an empty argument:_
+
+   `git push origin :side` (deletes)
+
+   `git fetch origin :bugFix` (creates)
+
+
 1. _Thing that i going to use in the future:_
+    
+    `git checkout -b totallyNotMain o/main` , `git branch -u o/main Branch`
+
     
   <details>
  <summary><h4> :camera_flash:Screenshots </h4></summary>
 
- ![]()
- ![]()
+ ![Main](task_git_collaboration/2._LearnGitBranching_Main.jpg)
+ ![Remote](task_git_collaboration/2._LearnGitBranching_Remote.jpg)
+ 
   </details>
       
   <details>
  <summary><h4>:memo:Notes </h4></summary>
       
+ ***Remote***
+
+  `git checkout -b totallyNotMain o/main`
+  
+  Creates a new branch named totallyNotMain and sets it to track o/main
+
+
+  Another way to set remote tracking on a branch is to simply use the `git branch -u` option. 
+  Running `git branch -u o/main foo` will set the foo branch to track o/main. If foo is currently checked out you can even leave it off:
+  
+  `git branch -u o/main`
+
   <details>
  <summary><h4> more </h4></summary>
+ 
+  Detaching HEAD just means attaching it to a commit instead of a branch.
+
+  Moving upwards one commit at a time with ^
+  Moving upwards a number of times with ~<num>
+
+  _tags_ exist as anchors in the commit tree that designate certain spots.
+  `git tag v1 C1`
+
+  Git will normally follow the "first" parent upwards from a merge commit, but specifying a number with ^ changes this default behavior.
+  If we checkout main^ without the modifier, we will follow the first parent after the merge commit.
+  
+  `git checkout main^2`
+
+  git push <remote> <place>
+  git push origin main
+  translates to this in English:
+  _Go to the branch named "main" in my repository, grab all the commits, and then go to the branch "main" on the remote named "origin". Place whatever commits are missing on that branch and then tell me when you're done._
+  
+  _By specifying main as the "place" argument, we told git where the commits will come from and where the commits will go. It's essentially the "place" or "location" to synchronize between the two repositories._
+  
+  _Keep in mind that since we told git everything it needs to know (by specifying both arguments), it totally ignores where we are checked out!_
+
+  For git push: In order to specify both the source and the destination of <place>, simply join the two together with a colon:\
+  
+  `git push origin <source>:<destination>`
+  
+  It's the same type of concepts but just applied in the opposite direction (since now you are downloading commits rather than uploading).
+  If you specify a place with `git fetch` like in the following command:
+  
+ `git fetch origin foo`
+ 
+  _Git will go to the foo branch on the remote, grab all the commits that aren't present locally, and then plop them down onto the o/foo branch locally._
+  
+  You can technically specify "nothing" as a valid source for both git push and git fetch. The way you specify nothing is via an empty argument:
+  
+  - `git push origin :side` (deletes)
+  
+  - `git fetch origin :bugFix` (creates)
 
   </details>
     
   </details>
    </details>
+ 
+ ***
+<p align="center">
+   <img src="meme_img/General_done.jpg" alt="meoww"/>
+</p>
+
+***
  
 </details>
 
