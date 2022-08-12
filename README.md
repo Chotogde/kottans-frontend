@@ -120,7 +120,7 @@ ___
 <details>
     <summary><h5>Front-End Basics</h5></summary>
     
-- [ ] 3. Intro to HTML & CSS
+- [x] 3. Intro to HTML & CSS
 - [ ] 4. Responsive Web Design
 - [ ] 5. HTML & CSS Practice
 - [ ] 6. JavaScript Basics
@@ -771,4 +771,120 @@ This allows errors to be caught and fixed early.
 
 <details>
 <summary><h2> Front-End Basics </h2></summary>
+	
+<!-------------------------------3. Intro to HTML & CSS--------------------------------->
+ 
+ <details>
+<summary><h3> 3. Intro to HTML & CSS </h3></summary>
+	
+ :link:[Tasks](https://github.com/kottans/frontend/blob/2022_UA/tasks/html-css-intro.md)
+	
+ Useful cheatsheets: :link:[One](https://www.codecademy.com/learn/learn-html/modules/learn-html-elements/cheatsheet) | :link:[Two](https://www.codecademy.com/learn/paths/learn-css/tracks/learn-css/modules/syntax-and-selectors/cheatsheet)
+   
+ Useful links: :link:[codepen](https://codepen.io/) | :link:[Specificity Calculator](https://specificity.keegan.st/) 
+    
+## 1. Intro to HTML & CSS (coursera)  
+## 2. Learn HTML (codecademy)
+## 3. Learn CSS (codecademy)
+	
+I was already familiar with the basic concepts of HTML and CSS. Refreshed my memory a little but I also learned new things.
+	
+1. _What's was new to me:_
+	
+	`&nbsp;` no break space 
+	
+1. _Thing that amazed me:_
+	
+	`color: green !important` - > than specificity
+	
+1. _Thing that i going to use in the future:_
+	
+	all the commands are basic and useful, in the future I will use most of them.
+   
+  <details>
+ <summary><h4> :camera_flash:Screenshots </h4></summary>
+
+ ![Coursera1](task_html_css_intro/3._html_Coursera1.jpg)
+ ![codecademy](task_html_css_intro/3._codecademy.jpg)
+
+  </details>
+      
+  <details>
+ <summary><h4>:memo:Notes </h4></summary>
+	  
+ <details>
+ <summary><h4> Slides </h4></summary>
+	 
+![AnatomyHTMLtag](readme_img/Front-End/AnatomyHTMLtag.jpg)
+![Selectors(specificity)](readme_img/Front-End/Selectors(specificity).jpg)
+![Cumulative Margins](readme_img/Front-End/Cumulative Margins.jpg)
+	 
+</details>
+	  
+`&nbsp;` no break space 
+	  
+```
+<a href=”” title=”” target=”_blank”>text </a>
+title=”” - for screen reader
+target=”_blank” - forces the browser to open link in a new tab or window
+#id - link to content ID on page
+```
+	  
+`color: green !important` - > than specificity
+
+`box-sizing: border-box;` to specifying the height and width of the content box, not the entire thing
+`box-sizing: content-box;` original size, with borders
+`box-sizing` - not inherit
+
+	  
+`overflow: ;`
+`scroll, auto, hidden, visible, inherit`
+
+`background-repeat: no-repeat;` 
+
+`position: ;`
+`relative, absolute,`
+
+	  
+  <details>
+ <summary><h4> more </h4></summary>
+ 
+```
+Attributes can be selected similarly to types, classes, and IDs.
+[href]{
+   color: magenta;
+}
+
+The most basic syntax is an attribute surrounded by square brackets. In the above example: [href] would target all elements with an href attribute and set the color to magenta.
+And it can get more granular from there by adding type and/or attribute values. One way is by using type[attribute*=value]. In short, this code selects an element where the attribute contains any instance of the specified value. Let’s take a look at an example.
+<img src='/images/seasons/cold/winter.jpg'>
+<img src='/images/seasons/warm/summer.jpg'>
+The HTML code above renders two <img> elements, each containing a src attribute with a value equaling a link to an image file.
+img[src*='winter'] {
+  height: 50px;
+}
+
+img[src*='summer'] {
+  height: 100px;
+}
+
+
+
+div.headline {
+  width: 400px;
+  margin: 0 auto;
+}
+In the example above, margin: 0 auto; will center the divs in their containing elements. The 0 sets the top and bottom margins to 0 pixels. The auto value instructs the browser to adjust the left and right margins until the element is centered within its containing element.
+In order to center an element, a width must be set for that element. Otherwise, the width of the div will be automatically set to the full width of its containing element, like the <body>, for example. It’s not possible to center an element that takes up the full width of the page, since the width of the page can change due to display and/or browser window size.
+Note: What’s the difference between display: none and visibility: hidden? An element with display: none will be completely removed from the web page. An element with visibility: hidden, however, will not be visible on the web page, but the space reserved for it will.
+```
+
+  </details>
+    
+  </details>
+ 
+ </details>
+ 
+<!-------------------------------          --------------------------------->
+
 </details>
