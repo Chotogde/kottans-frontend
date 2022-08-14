@@ -887,4 +887,173 @@ Note: What’s the difference between display: none and visibility: hidden? An e
  
 <!-------------------------------          --------------------------------->
 
+<!-------------------------------4. Responsive Web Design--------------------------------->
+ 
+ <details>
+<summary><h3> 4. Responsive Web Design </h3></summary>
+	
+ :link:[Tasks](https://github.com/kottans/frontend/blob/2022_UA/tasks/html-css-responsive.md)
+	
+ Useful links: :link:[Flex](https://fls.guru/flexbox.html) | :link:[Grid](https://fls.guru/grid.html) 
+    
+   1. Responsive web design basics  
+   2. FLEXBOX (youtube/FreelancerLifeStyle)
+   3. Flexbox Froggy (game)
+   4. Grid (youtube/FreelancerLifeStyle)
+   5. Grid Garden (game)
+	
+Oof. It was harder for me than I thought. At first, I had a lot of doubts, I thought that I would not understand the material. At first, I had a lot of doubts, I thought that I would not understand the material. But after a good night's sleep, everything fell into place. Like a puzzle (:
+
+Froggy and grid garden games helped a lot.
+	
+1. _What's was new to me:_
+	
+	Flex, Grid. 
+	
+1. _Thing that amazed me:_
+	
+	How hard is Grid understanding to me 
+	
+1. _Thing that i going to use in the future:_
+	
+	Not sure, but Flex seems more easy for me to use it in projects (as of now)
+   
+  <details>
+ <summary><h4> :camera_flash:Screenshots </h4></summary>
+
+ ![Froggy](task_responsive_web_design/4._Froggy.jpg)
+ ![GridGarden](task_responsive_web_design/4._GridGarden.jpg)
+
+  </details>
+      
+  <details>
+ <summary><h4>:memo:Notes </h4></summary>
+	  
+ <details>
+ <summary><h4> Slides </h4></summary>
+	 
+ ![Grid_Layout](readme_img/Front-End/Grid_Layout.jpg)
+
+	 
+</details>
+	  
+	  
+  <details>
+ <summary><h4> more </h4></summary>
+ 
+```
+##Flex
+
+display: flex;
+display: inline-flex;
+
+display: flex;
+justify-content: flex-start; 
+justify-content: flex-end;
+justify-content: center;
+justify-content: space-between;
+justify-content: space-around;
+
+align-items: stretch;
+align-items: flex-start;
+align-items: flex-end;
+align-items: center;
+align-items: baseline;
+
+flex-wrap:nowrap;
+flex-wrap: wrap;
+flex-wrap: wrap-reverse;
+
+align-self: ;  attributes as align-items
+
+order: ; 
+
+flex-basis: auto;
+flex-basis: % px;
+flex-grow: 0; 
+flex-shrink: 1; 
+
+flex: flex-grow flex-shrink flex-basis;
+flex: 0 1 auto;
+
+
+flex-direction: ; row, row-reverse, column, column-reverse
+
+flex-direction: column;
+align-items: stretch;
+justify-content: space-between;
+
+ flex-direction and flex-wrap = flex-flow
+For example, you can use flex-flow: row wrap to set rows and wrap them.
+
+align-content to set how multiple lines are spaced apart from each other. This property takes the following values:
+flex-start: Lines are packed at the top of the container.
+flex-end: Lines are packed at the bottom of the container.
+center: Lines are packed at the vertical center of the container.
+space-between: Lines display with equal spacing between them.
+space-around: Lines display with equal spacing around them.
+stretch: Lines are stretched to fit the container.
+This can be confusing, but align-content determines the spacing between lines, while align-items determines how the items as a whole are aligned within the container. When there is only one line, align-content has no effect.
+
+Шпаргалка по FLEXBOX // «Фрилансер по жизни»
+https://fls.guru/flexbox.html
+
+
+##Grid
+
+display: grid;
+display: inline-grid;
+
+grid-template-columns: ;
+grid-template-rows: ;
+
+e.x.
+grid-template-columns: 200px 150px 300px;
+            minmax( 150px, 1fr)
+auto
+fit-content (400px)
+repeat(3, 1fr)
+
+1fr - единица гибкости
+
+
+grid-template-areas: ;
+“header header”
+“side content”
+
+grid-template:  / ;  rows / columns
+
+grid-template:
+ [start] “header header” 100px [row2]
+ [row2] “side content” 1fr [row-end] / 150 1fr;
+
+grid-auto-rows: 200px;
+grid-auto-columns: ;
+
+grid-auto-flow: 
+        row, column, dense
+
+grid-row-start
+grid-row-end
+grid-column-start
+grid-column-end
+            span 3
+
+row-gap:
+column-gap
+
+
+Шпаргалка по CSS Grid Layout // «Фрилансер по жизни»
+https://fls.guru/grid.html
+
+```
+
+  </details>
+    
+  </details>
+ 
+ </details>
+ 
+<!-------------------------------          --------------------------------->
+
 </details>
